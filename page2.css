@@ -1,0 +1,103 @@
+.blockcard .uk-card {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 19%);
+}
+
+.blockcard_title {
+    font-size: 30px;
+    color: #333;
+    font-family: "Permanent Marker", cursive;
+}
+
+.slider-icons {
+    border: 1px solid #333;
+    border-radius: 50%;
+    padding: 5px;
+    color: #005496;
+}
+
+.slider-icons:hover {
+    background-color: #005496;
+    border-radius: 50%;
+    color: #fff;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+
+.uk-slider-items a:hover{
+    text-decoration: none;
+}
+
+.fa-star{
+    color: #ffd700;
+}
+
+.blockcard strike{
+    color: #ff0000;
+}
+
+
+.mediaImg{
+    height: 310px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.uk-slider-items .uk-card-body{
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+
+
+.subnavBottom{
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+
+.subnavBottom a{
+    font-size: 20px !important;
+    font-weight: 600;
+}
+
+.uk-subnav-pill>.uk-active>a {
+    background-color: #3c3eb0 !important;
+}
+
+.subnavBottom li{
+    margin-bottom: 16px;
+}
+
+.pad20{
+    padding: 20px;
+}
+
+
+
+.border-radius{
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
+}
+
+
+.whitebg{
+    background-image: url("./whitebg.png");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.bluebg{
+    background-image: url("./bluebg.png");
+    background-size: cover;
+}
+
+
+.uk-modal-full h1{
+    text-transform: capitalize;
+}

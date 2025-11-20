@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.16/dist/css/uikit.min.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="page2.css">
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.16/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.16/dist/js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+
+    <div uk-sticky>
+
+        <nav class="uk-navbar-container">
+            <div class="uk-container">
+                <div uk-navbar="dropbar: true; dropbar-anchor: !.uk-navbar-container; target-y: !.uk-navbar-container">
+                    <div class="uk-navbar-left">
+                        <a href="logo.jpeg" class="uk-navbar-item uk-logo mr-navLogo">
+                            <img src="logo.jpeg">
+                        </a>
+                    </div>
+
+                    <div class="uk-navbar-right nav_font">
+
+                        <ul class="uk-navbar-nav uk-visible@m">
+                            <li>
+                                <a href="tel:+91 7676611377" class="uk-text-capitalize">
+                                    <span>Call Us: +91 7676611377</span>
+                                </a>
+                            </li>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="./page3.html">about</a></li>
+                        </ul>
+
+                        <div class="uk-hidden@m">
+                            <a href="offcanvas-usage" class="menu_icon uk-margin-small-bottom uk-link-reset uk-text-center" uk-navbar-toggle-icon="ratio: 1.3" uk-toggle="target: #offcanvas-flip" style="color: #1c2839 !important;">
+                                <p class="uk-margin-top menu_text">Menu</p>
+                            </a>
+                         
+
+                            <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+                                <div class="uk-offcanvas-bar">
+
+                                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                                    <ul class="uk-list">
+                                        <li>
+                                            <a href="tel:+91 7676611377" class="uk-text-capitalize uk-link-reset">
+                                                <span>Call Us: +91 7676611377</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="./index.html" class="uk-link-reset">Home</a></li>
+                                        <li><a href="#" class="uk-link-reset">Service</a></li>
+                                        <li><a href="./page3.html" class="uk-link-reset">about</a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <!-- first section -->
+    <section style="background-color: #dcf1f9;" class="uk-padding uk-padding-remove-horizontal">
+        <div class="uk-container uk-container-large">
+
+            <div class="uk-slider-container-offset blockcard" uk-slider>
+
+                <div class="uk-flex uk-flex-middle uk-flex-between uk-margin-bottom" uk-grid>
+                    <div class="uk-width-expand@s">
+                        <h2 class="blockcard_title uk-position-relative">Birthday service</h2>
+                    </div>
+                    <div class="uk-width-auto@s uk-flex-right uk-flex uk-flex-middle">
+                        <div class="uk-margin-small-left">
+                            <a class="slider-icons uk-padding-small" href="#" uk-icon="icon: chevron-left; ratio: 1.2"
+                                uk-slider-item="previous" aria-label="Go to Previous Slide"></a>
+                            <a class="slider-icons uk-padding-small" href="#" uk-icon="icon: chevron-right; ratio: 1.2"
+                                uk-slider-item="next" aria-label="Go to Next Slide"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+
+                    <div class="uk-slider-items uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s uk-grid">
+                        <div>
+                            <a href="#Balloon_modal" uk-toggle>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="mediaImg" src="./secondPage/firstSlideMain.jpeg"  alt="">
+                                    </div>
+                                    <div class="uk-card-body pad20">
+                                        <p>Balloon Decoration</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div id="Balloon_modal" class="uk-modal-full" uk-modal>
+                                <div class="uk-modal-dialog">
+                                    <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                                    <div class="uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                                        <div>
+                                            <div class="uk-position-relative uk-visible-toggle uk-light uk-height-viewport" tabindex="-1" uk-slideshow>
+
+                                                <div class="uk-slideshow-items" style="height: 100vh">
+                                                    <div>
+                                                        <img src="./secondPage/firstSlideMain1.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/firstSlideMain2.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/firstSlideMain3.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/firstSlideMain4.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/firstSlideMain5.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                </div>
+                                            
+                                                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+                                                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-large">
+                                            <h1>Balloon Decoration</h1>
+                                            <p>Add a touch of magic to your celebrations with our creative and customized balloon decorations! Whether it’s a birthday, engagement, baby shower, wedding, or corporate event, we design stunning balloon setups that bring your vision to life.
+
+                                                From elegant arches and vibrant backdrops to themed stage décor and photo booths, our expert decorators use premium-quality balloons and artistic designs to create a joyful, picture-perfect atmosphere.
+                                            </p>
+                                            <p class="uk-text-bold"> ✨ Why Choose Us:</p>
+                                            <ul>
+                                                <li>
+                                                    Personalized themes and color combinations
+                                                </li>
+                                                <li>
+                                                    Professional setup and on-time delivery
+                                                
+                                                </li>
+                                                <li>
+                                                    Unique designs for every occasion
+                                                </li>
+                                                <li>
+                                                    Perfect for indoor and outdoor events
+                                                </li>
+                                            </ul>
+                                                
+                                                <p class="uk-text-bold">
+                                                    For more information contact us
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <a href="#photo_modal" uk-toggle>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="mediaImg" src="./secondPage/secondSlide.jpg"  alt="">
+                                    </div>
+                                    <div class="uk-card-body pad20">
+                                        <p>photography</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div id="photo_modal" class="uk-modal-full" uk-modal>
+                                <div class="uk-modal-dialog">
+                                    <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                                    <div class="uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                                        <div>
+                                            <div class="uk-position-relative uk-visible-toggle uk-light uk-height-viewport" tabindex="-1" uk-slideshow>
+
+                                                <div class="uk-slideshow-items" style="height: 100vh">
+                                                    <div>
+                                                        <img src="./secondPage/secondSlide1.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/secondSlide2.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/secondSlide3.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/secondSlide4.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/secondSlide5.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                </div>
+                                            
+                                                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+                                                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-large">
+                                            <h1>photography</h1>
+                                            <p>Capture life’s most beautiful moments with our creative and high-quality photoshoot services. Whether it’s a pre-wedding, birthday, maternity, portfolio, or corporate shoot, we specialize in creating timeless photographs that tell your story with elegance and emotion.
+
+                                                Our professional team combines artistic vision, advanced equipment, and perfect lighting to deliver images that are natural, expressive, and unforgettable.
+                                            </p>
+                                            <p class="uk-text-bold"> ✨ Why Choose Us:</p>
+                                            <ul>
+                                                <li>
+                                                    Personalized themes and styling
+                                                </li>
+                                                <li>
+                                                    Skilled photographers and editors
+                                                
+                                                </li>
+                                                <li>
+                                                    On-location or studio shoots
+                                                </li>
+                                                <li>
+                                                    Premium-quality retouching and editing
+                                                </li>
+                                            </ul>
+                                                
+                                                <p class="uk-text-bold">
+                                                    For more information contact us
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="#kids_modal" uk-toggle>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="mediaImg" src="./secondPage/thirdSlide.jpeg"  alt="">
+                                    </div>
+                                    <div class="uk-card-body pad20">
+                                        <p>all kids activities</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div id="kids_modal" class="uk-modal-full" uk-modal>
+                                <div class="uk-modal-dialog">
+                                    <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                                    <div class="uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                                        <div>
+                                            <div class="uk-position-relative uk-visible-toggle uk-light uk-height-viewport" tabindex="-1" uk-slideshow>
+
+                                                <div class="uk-slideshow-items" style="height: 100vh">
+                                                    <div>
+                                                        <img src="./secondPage/thirdSlide1.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/thirdSlide2.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/thirdSlide3.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/thirdSlide4.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/thirdSlide5.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                </div>
+                                            
+                                                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+                                                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-large">
+                                            <h1>all kids activities</h1>
+                                            <p>Bring joy, laughter, and learning together with our exciting kids’ activities designed to spark creativity and imagination! From art and craft workshops, fun games, and storytelling sessions to dance, music, and interactive learning, we create a safe and joyful space where every child can explore, play, and grow.
+
+                                                Our team ensures a perfect balance of fun, learning, and engagement, making every moment unforgettable for your little ones.
+                                            </p>
+                                            <p class="uk-text-bold"> ✨ Why Choose Us:</p>
+                                            <ul>
+                                                <li>
+                                                    Safe, child-friendly environment
+                                                </li>
+                                                <li>
+                                                    Creative and educational activities
+                                                
+                                                </li>
+                                                <li>
+                                                    Friendly and experienced instructors
+                                                </li>
+                                                <li>
+                                                    Perfect for parties, events, and celebrations
+                                                </li>
+                                            </ul>
+                                                
+                                                <p class="uk-text-bold">
+                                                    For more information contact us
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="#fun_modal" uk-toggle>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="mediaImg" src="./secondPage/fourthSlide.jpeg"  alt="">
+                                    </div>
+                                    <div class="uk-card-body pad20">
+                                        <p>fun entertainers</p>
+                                    </div>
+                                </div>
+                            </a>
+                          
+                            <div id="fun_modal" class="uk-modal-full" uk-modal>
+                                <div class="uk-modal-dialog">
+                                    <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                                    <div class="uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                                        <div>
+                                            <div class="uk-position-relative uk-visible-toggle uk-light uk-height-viewport" tabindex="-1" uk-slideshow>
+
+                                                <div class="uk-slideshow-items" style="height: 100vh">
+                                                    <div>
+                                                        <img src="./secondPage/fourthSlide1.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/fourthSlide2.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/fourthSlide3.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/fourthSlide4.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/fourthSlide5.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                </div>
+                                            
+                                                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+                                                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-large">
+                                            <h1>fun entertainers</h1>
+                                            <p>Make your celebration unforgettable with our talented and energetic fun entertainers who bring joy, laughter, and excitement to every event! From magicians, clowns, jugglers, and dancers to face painters, mascots, and game hosts, we offer a variety of entertainment options that keep guests — especially kids — fully engaged and delighted.
+
+                                                Our entertainers are professional, friendly, and experienced in creating the perfect atmosphere for birthdays, family functions, school events, and corporate parties.
+                                            </p>
+                                            <p class="uk-text-bold"> ✨ Why Choose Us:</p>
+                                            <ul>
+                                                <li>
+                                                    Wide range of entertainment options
+                                                </li>
+                                                <li>
+                                                    Skilled and interactive performers
+                                                
+                                                </li>
+                                                <li>
+                                                    Customized acts to suit your event theme
+                                                </li>
+                                                <li>
+                                                    Guaranteed fun and laughter for all ages
+                                                </li>
+                                            </ul>
+                                                
+                                                <p class="uk-text-bold">
+                                                    For more information contact us
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="#live_modal" uk-toggle>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="mediaImg" src="./secondPage/fifthSlide.jpeg"  alt="">
+                                    </div>
+                                    <div class="uk-card-body pad20">
+                                        <p>live eateries</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <div id="live_modal" class="uk-modal-full" uk-modal>
+                                <div class="uk-modal-dialog">
+                                    <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                                    <div class="uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                                        <div>
+                                            <div class="uk-position-relative uk-visible-toggle uk-light uk-height-viewport" tabindex="-1" uk-slideshow>
+
+                                                <div class="uk-slideshow-items" style="height: 100vh">
+                                                    <div>
+                                                        <img src="./secondPage/fifthSlide1.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/fifthSlide2.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/fifthSlide3.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/fifthSlide4.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/fifthSlide5.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                </div>
+                                            
+                                                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+                                                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-large">
+                                            <h1>live eateries</h1>
+                                            <p>Treat your guests to a delightful dining experience with our live eateries and interactive food counters! From sizzling live grills and chat stations to pasta corners, mocktail bars, and dessert counters — we bring the aroma, flavor, and excitement of fresh cooking right to your event.
+
+                                                Our professional chefs and catering team craft each dish with care, using high-quality ingredients to serve food that looks as good as it tastes. Whether it’s a wedding, corporate gathering, or private celebration, our live counters add a special touch of flavor and fun.
+                                            </p>
+                                            <p class="uk-text-bold"> ✨ Why Choose Us:</p>
+                                            <ul>
+                                                <li>
+                                                    Wide variety of cuisines and live counters
+                                                </li>
+                                                <li>
+                                                    Freshly prepared, hygienic, and delicious food
+                                                
+                                                </li>
+                                                <li>
+                                                    Skilled chefs and friendly service staff
+                                                </li>
+                                                <li>
+                                                    Customizable menus to match your event theme
+                                                </li>
+                                            </ul>
+                                                
+                                                <p class="uk-text-bold">
+                                                    For more information contact us
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="#games_modal" uk-toggle>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="mediaImg" src="./secondPage/sixthSlide.jpeg"  alt="">
+                                    </div>
+                                    <div class="uk-card-body pad20">
+                                        <p>games stalls</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div id="games_modal" class="uk-modal-full" uk-modal>
+                                <div class="uk-modal-dialog">
+                                    <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                                    <div class="uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                                        <div>
+                                            <div class="uk-position-relative uk-visible-toggle uk-light uk-height-viewport" tabindex="-1" uk-slideshow>
+
+                                                <div class="uk-slideshow-items" style="height: 100vh">
+                                                    <div>
+                                                        <img src="./secondPage/sixthSlide1.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/sixthSlide2.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/sixthSlide3.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/sixthSlide4.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/sixthSlide5.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                </div>
+                                            
+                                                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+                                                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-large">
+                                            <h1>games stalls</h1>
+                                            <p>Add excitement and laughter to your event with our interactive games stalls — perfect for guests of all ages! From classic ring toss, balloon shooting, and spin-the-wheel to modern arcade setups and fun challenges, we bring the thrill of a carnival right to your celebration.
+
+                                                Our stalls are designed to create a vibrant, playful, and engaging atmosphere, making every guest feel like a winner. Whether it’s a birthday, school fest, corporate event, or fair, our games zone guarantees non-stop fun and entertainment.
+                                            </p>
+                                            <p class="uk-text-bold"> ✨ Why Choose Us:</p>
+                                            <ul>
+                                                <li>
+                                                    Wide variety of exciting games and stalls
+                                                </li>
+                                                <li>
+                                                    Safe, colorful, and crowd-friendly setups
+                                                
+                                                </li>
+                                                <li>
+                                                    Friendly staff to guide and entertain players
+                                                </li>
+                                                <li>
+                                                    Perfect for kids and adults alike
+                                                </li>
+                                            </ul>
+                                                
+                                                <p class="uk-text-bold">
+                                                    For more information contact us
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+
+                        <div>
+                            <a href="#parties_modal" uk-toggle>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img class="mediaImg" src="./secondPage/sevenSlide.jpeg"  alt="">
+                                    </div>
+                                    <div class="uk-card-body pad20">
+                                        <p>fun parties activities</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <div id="parties_modal" class="uk-modal-full" uk-modal>
+                                <div class="uk-modal-dialog">
+                                    <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                                    <div class="uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                                        <div>
+                                            <div class="uk-position-relative uk-visible-toggle uk-light uk-height-viewport" tabindex="-1" uk-slideshow>
+
+                                                <div class="uk-slideshow-items" style="height: 100vh">
+                                                    <div>
+                                                        <img src="./secondPage/sevenSlide1.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/sevenSlide2.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/sevenSlide3.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/sevenSlide4.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./secondPage/sevenSlide5.jpeg" alt="" uk-cover>
+                                                    </div>
+                                                </div>
+                                            
+                                                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+                                                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-large">
+                                            <h1>fun parties activities</h1>
+                                            <p>Turn every celebration into an unforgettable experience with our exciting fun party activities! From dance-offs, music games, and treasure hunts to face painting, balloon twisting, and creative workshops, we bring endless joy and energy to your event.
+
+                                                Whether it’s a birthday bash, family gathering, school event, or corporate celebration, our activities are designed to keep guests of all ages entertained, engaged, and smiling throughout.
+                                            </p>
+                                            <p class="uk-text-bold"> ✨ Why Choose Us:</p>
+                                            <ul>
+                                                <li>
+                                                    Wide range of interactive and entertaining activities
+                                                </li>
+                                                <li>
+                                                    Professional hosts and coordinators
+                                                
+                                                </li>
+                                                <li>
+                                                    Customized games to match your theme and audience
+                                                </li>
+                                                <li>
+                                                    Fun, safe, and memorable experiences for everyone
+                                                </li>
+                                            </ul>
+                                                
+                                                <p class="uk-text-bold">
+                                                    For more information contact us
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end first section -->
+
+    <!-- second -->
+
+    <section class="uk-padding uk-padding-remove-horizontal whitebg">
+        <div class="uk-container uk-container-large">
+
+            <div class="uk-slider-container-offset blockcard" uk-slider>
+
+                <div class="uk-flex uk-flex-middle uk-flex-between uk-margin-bottom" uk-grid>
+                    <div class="uk-width-expand@s">
+                        <h2 class="blockcard_title uk-position-relative">Kids Decoration</h2>
+                    </div>
+                    <div class="uk-width-auto@s uk-flex-right uk-flex uk-flex-middle">
+                        <div class="uk-margin-small-left">
+                            <a class="slider-icons uk-padding-small" href="#" uk-icon="icon: chevron-left; ratio: 1.2"
+                                uk-slider-item="previous" aria-label="Go to Previous Slide"></a>
+                            <a class="slider-icons uk-padding-small" href="#" uk-icon="icon: chevron-right; ratio: 1.2"
+                                uk-slider-item="next" aria-label="Go to Next Slide"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+
+                    <div class="uk-slider-items uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s uk-grid">
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/kids.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>Basic Decoration</p>
+                                   
+                                    <div>
+                                        <i
+                                            class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">2000</strike><span>1399</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/kids1.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>Multi color baloon decoration</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">2500</strike><span>1799</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/kids2.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>Gold pannel Premium Decoration</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">7000</strike><span>4999</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/kids3.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>Premium design</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">8000</strike><span>5499</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/kids4.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>Basic butterfly ring Decoration</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">7000</strike><span>3499</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/kids5.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>18 years premium Decoration</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">18000</strike><span>12999</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end second -->
+
+
+    <!-- third -->
+
+    <section style="background-color: #6060b5;" class="uk-padding uk-padding-remove-horizontal">
+        <div class="uk-container uk-container-large">
+
+            <div class="uk-slider-container-offset blockcard" uk-slider>
+
+                <div class="uk-flex uk-flex-middle uk-flex-between uk-margin-bottom" uk-grid>
+                    <div class="uk-width-expand@s">
+                        <h2 class="blockcard_title uk-position-relative" style="color: #fff;">Theme decorations</h2>
+                    </div>
+                    <div class="uk-width-auto@s uk-flex-right uk-flex uk-flex-middle">
+                        <div class="uk-margin-small-left">
+                            <a class="slider-icons uk-padding-small" style="border-color:#fff; color: #fff;" href="#"
+                                uk-icon="icon: chevron-left; ratio: 1.2" uk-slider-item="previous"
+                                aria-label="Go to Previous Slide"></a>
+                            <a class="slider-icons uk-padding-small" style="border-color:#fff; color: #fff;" href="#"
+                                uk-icon="icon: chevron-right; ratio: 1.2" uk-slider-item="next"
+                                aria-label="Go to Next Slide"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+
+                    <div class="uk-slider-items uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s uk-grid">
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/theme.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>Princes theme Decoration</p>
+                                    <div>
+                                        <i
+                                            class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">5000</strike><span>2999</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/theme1.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>Space theme decoration</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">8000</strike><span>5499</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/theme2.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>1st year butterfly theme</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">25000</strike><span>16999</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/theme3.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>Cocomelon premium Decoration</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">18000</strike><span>11999</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/theme4.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>butterfly premium high level decoration</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">40000</strike><span>29999</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/theme5.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>mickey mouse premium Decoration</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">20000</strike><span>13000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end third -->
+
+
+    <!-- four -->
+
+    <section class="uk-padding uk-padding-remove-horizontal whitebg">
+        <div class="uk-container uk-container-large">
+
+            <div class="uk-slider-container-offset blockcard" uk-slider>
+
+                <div class="uk-flex uk-flex-middle uk-flex-between uk-margin-bottom" uk-grid>
+                    <div class="uk-width-expand@s">
+                        <h2 class="blockcard_title uk-position-relative">Anniversary decoration</h2>
+                    </div>
+                    <div class="uk-width-auto@s uk-flex-right uk-flex uk-flex-middle">
+                        <div class="uk-margin-small-left">
+                            <a class="slider-icons uk-padding-small" href="#" uk-icon="icon: chevron-left; ratio: 1.2"
+                                uk-slider-item="previous" aria-label="Go to Previous Slide"></a>
+                            <a class="slider-icons uk-padding-small" href="#" uk-icon="icon: chevron-right; ratio: 1.2"
+                                uk-slider-item="next" aria-label="Go to Next Slide"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+
+                    <div class="uk-slider-items uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s uk-grid uk-grid-match">
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/anniversary10.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>simple anniversary Decoration</p>
+                                        <div>
+                                            <i
+                                                class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                                class="uk-margin-small-right">3000</strike><span>2299</span>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/anniversary11.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>medium anniversary decoration</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">3700</strike><span>2999</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/anniversary6.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>medium with rose petals anniversary decoration</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">4500</strike><span>3799</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/anniversary3.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>Amazing anniversary Decoration</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">4500</strike><span>3999</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/anniversary7.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>50th anniversary Decoration</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">12000</strike><span>9999</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/anniversary2.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>canopy anniversary Decoration</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">6000</strike><span>4499</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end four -->
+
+
+    <!-- five -->
+
+    <section style="background-color: #dcf1f9;" class="uk-padding uk-padding-remove-horizontal">
+        <div class="uk-container uk-container-large">
+
+            <div class="uk-slider-container-offset blockcard" uk-slider>
+
+                <div class="uk-flex uk-flex-middle uk-flex-between uk-margin-bottom" uk-grid>
+                    <div class="uk-width-expand@s">
+                        <h2 class="blockcard_title uk-position-relative uk-margin-remove">House Warming</h2>
+                        <p class="uk-margin-remove">Contact us for more details</p>
+                    </div>
+                    <div class="uk-width-auto@s uk-flex-right uk-flex uk-flex-middle">
+                        <div class="uk-margin-small-left">
+                            <a class="slider-icons uk-padding-small" href="#" uk-icon="icon: chevron-left; ratio: 1.2"
+                                uk-slider-item="previous" aria-label="Go to Previous Slide"></a>
+                            <a class="slider-icons uk-padding-small" href="#" uk-icon="icon: chevron-right; ratio: 1.2"
+                                uk-slider-item="next" aria-label="Go to Next Slide"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+
+                    <div class="uk-slider-items uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s uk-grid">
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/House.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body pad20">
+                                    <p>traditional new building flower Decoration</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/House2.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body pad20">
+                                    <p>traditional entrance and house Warming decoration</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/House3.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body pad20">
+                                    <p>traditional pooja room flower decoration</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/House4.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body pad20">
+                                    <p>traditional house warming chapra Decoration</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/House5.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body pad20">premium house warming chapra Decoration</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/House6.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body pad20">
+                                    <p>luxury entrance flower Decoration</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end five -->
+
+
+    <!-- six -->
+
+    <section class="uk-padding uk-padding-remove-horizontal whitebg">
+        <div class="uk-container uk-container-large">
+
+            <div class="uk-slider-container-offset blockcard" uk-slider>
+
+                <div class="uk-flex uk-flex-middle uk-flex-between uk-margin-bottom" uk-grid>
+                    <div class="uk-width-expand@s">
+                        <h2 class="blockcard_title uk-position-relative">oh baby / baby shower</h2>
+                    </div>
+                    <div class="uk-width-auto@s uk-flex-right uk-flex uk-flex-middle">
+                        <div class="uk-margin-small-left">
+                            <a class="slider-icons uk-padding-small" href="#" uk-icon="icon: chevron-left; ratio: 1.2"
+                                uk-slider-item="previous" aria-label="Go to Previous Slide"></a>
+                            <a class="slider-icons uk-padding-small" href="#" uk-icon="icon: chevron-right; ratio: 1.2"
+                                uk-slider-item="next" aria-label="Go to Next Slide"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+
+                    <div class="uk-slider-items uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s uk-grid uk-grid-match">
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/birthday1.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>welcome baby simple decoration</p>
+                                    <div>
+                                        <i
+                                            class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">3500</strike><span>2799</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/birthday.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>Dazzling oh baby Decoration</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">12000</strike><span>8499</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/birthday2.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>Baby shower ring decoration</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">10000</strike><span>6499</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/birthday6.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>welcome baby arch Decoration</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">3000</strike><span>2199</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/birthday3.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>naming ceromony Decoration</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">8000</strike><span>5499</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/birthday5.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>baptism premium Decoration</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">20000</strike><span>14999</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end six -->
+
+
+    <!-- five -->
+
+    <section style="background-color: #dcf1f9;" class="uk-padding uk-padding-remove-horizontal">
+        <div class="uk-container uk-container-large">
+
+            <div class="uk-slider-container-offset blockcard" uk-slider>
+
+                <div class="uk-flex uk-flex-middle uk-flex-between uk-margin-bottom" uk-grid>
+                    <div class="uk-width-expand@s">
+                        <h2 class="blockcard_title uk-position-relative">Haldi / Mehandi decoration</h2>
+                    </div>
+                    <div class="uk-width-auto@s uk-flex-right uk-flex uk-flex-middle">
+                        <div class="uk-margin-small-left">
+                            <a class="slider-icons uk-padding-small" href="#" uk-icon="icon: chevron-left; ratio: 1.2"
+                                uk-slider-item="previous" aria-label="Go to Previous Slide"></a>
+                            <a class="slider-icons uk-padding-small" href="#" uk-icon="icon: chevron-right; ratio: 1.2"
+                                uk-slider-item="next" aria-label="Go to Next Slide"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+
+                    <div class="uk-slider-items uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s uk-grid uk-grid-match">
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/haldi5.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>Haldi / Mehandi decoration</p>
+                                    <div>
+                                        <i
+                                            class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">8000</strike><span>5999</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/haldi6.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>Haldi / Mehandi decoration</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">9000</strike><span>6999</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/haldi1.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>Haldi / Mehandi decoration</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">10000</strike><span>7999</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/haldi3.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>Haldi / Mehandi decoration</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">15000</strike><span>9999</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/haldi4.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>luxury Haldi / Mehandi decoration</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">28000</strike><span>21999</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img class="mediaImg" src="./group/haldi2.jpeg"  alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>premium Haldi / Mehandi decoration</p>
+                                    <div>
+                                        <i class="fa-solid fa-indian-rupee-sign uk-margin-small-right"></i><strike
+                                            class="uk-margin-small-right">25000</strike><span>19999</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end five -->
+
+
+
+    <footer class="uk-light uk-text-center bluebg">
+
+        <div class="uk-container uk-padding">
+            <div class="uk-text-center">
+                <p class="uk-margin-remove">With 6 years of experience & 5+ avg rating! We know how to make your special
+                    day awesome. </p>
+                <p class="uk-margin-remove">Lakhs of Happy Customers with thousands of Customer Reviews</p>
+                <p class="uk-margin-remove">Book today! Ballon_Master Experience</p>
+            </div>
+
+            <div class="uk-margin-top">
+                <label>Follow us:</label>
+                <p class="uk-margin-small">
+                    <a href="https://www.instagram.com/balloon__masters?utm_source=qr&igsh=MTR5bjVzY3F3eTV5Zg==" class="uk-icon-button uk-button-default uk-margin-small-right" target="_blank"
+                        uk-icon="instagram" aria-label="instagram icon"></a>
+                    <!-- <a href="" class="uk-icon-button uk-button-default uk-margin-small-right" target="_blank" uk-icon="twitter" aria-label="Twitter icon"></a>
+                    <a href="" class="uk-icon-button uk-button-default uk-margin-small-right" target="_blank" uk-icon="linkedin" aria-label="Linked in icon"></a> -->
+                </p>
+            </div>
+            <div class="uk-margin-top">
+                <!-- <p class="uk-margin-remove">Promoted in Singapore by Montegrow Pte. Ltd.,</p> -->
+                <script type="text/javascript">var year = new Date(); document.write(year.getFullYear());</script>
+                <b>Balloon Master</b>. All rights reserved.
+                <a class="uk-button uk-button-text lhs-footer-color" href="" target="_blank">Website by stewart</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.16/dist/css/uikit.min.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="page2.css">
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.16/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.16/dist/js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+    <div uk-sticky>
+
+        <nav class="uk-navbar-container">
+            <div class="uk-container">
+                <div uk-navbar="dropbar: true; dropbar-anchor: !.uk-navbar-container; target-y: !.uk-navbar-container">
+                    <div class="uk-navbar-left">
+                        <a href="logo.jpeg" class="uk-navbar-item uk-logo mr-navLogo">
+                            <img src="logo.jpeg">
+                        </a>
+                    </div>
+
+                    <div class="uk-navbar-right nav_font">
+
+                        <ul class="uk-navbar-nav uk-visible@m">
+                            <li>
+                                <a href="tel:+91 7676611377" class="uk-text-capitalize">
+                                    <span>Call Us: +91 7676611377</span>
+                                </a>
+                            </li>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./page2.html">Service</a></li>
+                            <li><a href="#">about</a></li>
+                        </ul>
+                        <div class="uk-hidden@m">
+                            <a href="offcanvas-usage" class="menu_icon uk-margin-small-bottom uk-link-reset uk-text-center" uk-navbar-toggle-icon="ratio: 1.3" uk-toggle="target: #offcanvas-flip" style="color: #1c2839 !important;">
+                                <p class="uk-margin-top menu_text">Menu</p>
+                            </a>
+                         
+
+                            <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+                                <div class="uk-offcanvas-bar">
+
+                                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                                    <ul class="uk-list">
+                                        <li>
+                                            <a href="tel:+91 7676611377" class="uk-text-capitalize uk-link-reset">
+                                                <span>Call Us: +91 7676611377</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="./index.html" class="uk-link-reset">Home</a></li>
+                                        <li><a href="./page2.html" class="uk-link-reset">Service</a></li>
+                                        <li><a href="#" class="uk-link-reset">about</a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <section class="uk-padding-large uk-padding-remove-horizontal" style="background-color: #dcf1f9;">
+        <div class="uk-container uk-container-large">
+            <div uk-filter="target: .js-filter">
+
+                <ul class="uk-subnav uk-subnav-pill subnavBottom uk-width-2-3 uk-margin-auto">
+                    <li class="uk-active" uk-filter-control><a href="#">All</a></li>
+                    <li uk-filter-control="[data-color='firstOne']"><a href="#">Birthday Decorations</a></li>
+                    <li uk-filter-control="[data-color='secondOne']"><a href="#">Entertainments</a></li>
+                    <li uk-filter-control="[data-color='thirdOne']"><a href="#">Flower Decorations</a></li>
+                    <li uk-filter-control="[data-color='fourthOne']"><a href="#">Corporate / Private</a></li>
+                    <!-- <li uk-filter-control="[data-color='fifthOne']"><a href="#">Festival Decorations</a></li> -->
+                    <!-- <li uk-filter-control="[data-color='sixOne']"><a href="#"> Planner</a></li>
+                    <li uk-filter-control="[data-color='seventhOne']"><a href="#">Occasions</a></li> -->
+                </ul>
+
+                <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/21.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail1.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/1.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/2.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail24.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="fourthOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/c13.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/3.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/4.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="thirdOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/g11.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/5.jpg" alt="">
+                        </div>
+                    </li>
+
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/7.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail16.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="fourthOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/c6.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/9.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/10.jpg" alt="">
+                        </div>
+                    </li>
+
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/12.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="thirdOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/g6.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail23.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="fourthOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/c18.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/13.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/14.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/15.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="thirdOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/g5.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="fourthOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/c12.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/17.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/18.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail18.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/20.jpg" alt="">
+                        </div>
+                    </li>
+
+                    <li data-color="fourthOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/c10.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/24.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/25.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/26.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail9.jpg" alt="">
+                        </div>
+                    </li>
+
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/28.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="fourthOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/c20.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/30.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/31.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/32.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="thirdOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/g2.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/33.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/34.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/35.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="fourthOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/c21.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail17.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/38.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/39.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail12.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="thirdOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/g10.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/41.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/42.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="fourthOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/c9.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail5.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/44.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/19.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="fourthOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/c3.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/45.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/46.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/47.jpg" alt="">
+                        </div>
+                    </li>
+
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail14.jpg" alt="">
+                        </div>
+                    </li>
+
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/51.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/52.jpg" alt="">
+                        </div>
+                    </li>
+
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/54.jpg" alt="">
+                        </div>
+                    </li>
+
+                    <li data-color="fourthOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/c1.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail2.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="thirdOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/g1.jpg" alt="">
+                        </div>
+                    </li>
+
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail3.jpg" alt="">
+                        </div>
+                    </li>
+
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/11.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail4.jpg" alt="">
+                        </div>
+                    </li>
+
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/16.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="fourthOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/c2.jpg" alt="">
+                        </div>
+                    </li>
+
+                    <li data-color="fourthOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/c4.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail7.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="thirdOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/g3.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/29.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="fourthOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/c5.jpg" alt="">
+                        </div>
+                    </li>
+
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/50.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="fourthOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/c8.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail20.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/53.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/22.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="thirdOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/g12.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail11.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="fourthOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/c11.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/37.jpg" alt="">
+                        </div>
+                    </li>
+
+
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/27.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="fourthOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/c14.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail22.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/23.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="thirdOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/g8.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="fourthOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/c17.jpg" alt="">
+                        </div>
+                    </li>
+
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/19.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="fourthOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/c19.jpg" alt="">
+                        </div>
+                    </li>
+
+
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail6.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/40.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail8.jpg" alt="">
+                        </div>
+                    </li>
+
+                    <li data-color="thirdOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/g13.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/48.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail10.jpg" alt="">
+                        </div>
+                    </li>
+
+
+
+
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail15.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="fourthOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/c7.jpg" alt="">
+                        </div>
+                    </li>
+
+                    <li data-color="thirdOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/g7.jpg" alt="">
+                        </div>
+                    </li>
+
+
+                    <li data-color="fourthOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/c16.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail19.jpg" alt="">
+                        </div>
+                    </li>
+
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/49.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail21.jpg" alt="">
+                        </div>
+                    </li>
+
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/8.jpg" alt="">
+                        </div>
+                    </li>
+
+                    <li data-color="thirdOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/g4.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="fourthOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/c15.jpg" alt="">
+                        </div>
+                    </li>
+
+
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/43.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="thirdOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/g9.jpg" alt="">
+                        </div>
+                    </li>
+
+                    <li data-color="secondOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/nail13.jpg" alt="">
+                        </div>
+                    </li>
+
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/6.jpg" alt="">
+                        </div>
+                    </li>
+
+
+                    <li data-color="thirdOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/g14.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-color="firstOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/55.jpg" alt="">
+                        </div>
+                    </li>
+                    <!-- <li data-color="sixOne">
+                        <div class="uk-card uk-card-default border-radius">
+                            <img class="" src="./final/1.jpg" alt="">6
+                        </div>
+                    </li> -->
+
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="uk-container uk-container-large">
+            <div class="uk-padding-large uk-padding-remove-horizontal">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-header pad-10">
+                        <div class="uk-width-expand">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Need To Know</h3>
+                        </div>
+                    </div>
+                    <div class="uk-card-body pad-10">
+
+                        <p class="uk-margin-small">There will be certain time slots for decorations like 3 - 5 hours durations is required before the event starts</p>
+                        <p class="uk-margin-small">Material used for the setup is on rent and will be collected next day from the location.</p>
+                        <p class="uk-margin-small">Customer needs to provide nearest power source /extension board for the supply / ladders / for outdoor event inform us before / the decoration materials responsibility will be on clients hand and once the event is done we'll collect back. </p>
+                        <p class="uk-margin-small">For captivating outdoor and daytime events, add our Balloon Shine Enhancer to make your decorations shine. Elevate your celebration effortlessly and protect against sunlight-induced oxidation, ensuring your balloons retain their shine throughout the event.</p>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-margin-top">
+                    <div class="uk-card-header pad-10">
+                        <div class="uk-width-expand">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Cancellation Policy</h3>
+                        </div>
+                    </div>
+                    <div class="uk-card-body pad-10">
+                        <p class="uk-margin-small">More than 24 hours before experience: Cancellation with 90% Refund </p>
+                        <p class="uk-margin-small">12 hours to 24 hours before an experience: Cancellation with 50% Refund</p>
+                        <p class="uk-margin-small">Less than 12 hours before experience: No Refund on No Cancellation is possible for experiences booked for 13th and 14th February as these are Valentine's Special Packages. Similarly, no cancellations are allowed for bookings made on Karva Chauth. than 12 hours before experience: No Refund on Cancellation</p>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-margin-top">
+                   
+                    <div class="uk-card-body pad-10">
+                        <p class="uk-margin-small uk-text-bold">For for more information please follow back on us / or contact us regarding (price variation, inclusions, new designs, modifications)</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="uk-light uk-text-center bluebg">
+
+        <div class="uk-container uk-padding">
+            <div class="uk-text-center">
+                <p class="uk-margin-remove">With 6 years of experience & 5+ avg rating! We know how to make your special
+                    day awesome. </p>
+                <p class="uk-margin-remove">Lakhs of Happy Customers with thousands of Customer Reviews</p>
+                <p class="uk-margin-remove">Book today! Ballon_Master Experience</p>
+            </div>
+
+            <div class="uk-margin-top">
+                <label>Follow us:</label>
+                <p class="uk-margin-small">
+                    <a href="https://www.instagram.com/balloon__masters?utm_source=qr&igsh=MTR5bjVzY3F3eTV5Zg==" class="uk-icon-button uk-button-default uk-margin-small-right" target="_blank"
+                        uk-icon="instagram" aria-label="instagram icon"></a>
+                    <!-- <a href="" class="uk-icon-button uk-button-default uk-margin-small-right" target="_blank" uk-icon="twitter" aria-label="Twitter icon"></a>
+                    <a href="" class="uk-icon-button uk-button-default uk-margin-small-right" target="_blank" uk-icon="linkedin" aria-label="Linked in icon"></a> -->
+                </p>
+            </div>
+            <div class="uk-margin-top">
+                <!-- <p class="uk-margin-remove">Promoted in Singapore by Montegrow Pte. Ltd.,</p> -->
+                <script type="text/javascript">var year = new Date(); document.write(year.getFullYear());</script>
+                <b>Balloon Master</b>. All rights reserved.
+                <a class="uk-button uk-button-text lhs-footer-color" href="" target="_blank">Website by stewart</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
